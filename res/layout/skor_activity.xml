@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Skor_activity" >
+
+    <Button
+        android:id="@+id/skor2a"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/skor1a"
+        android:layout_centerHorizontal="true"
+        android:text="2 Point" 
+        android:textColor="#FF0000"/>
+
+    <Button
+        android:id="@+id/skor3a"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/skor2a"
+        android:layout_marginRight="20dp"
+        android:text="3 Point" 
+        android:textColor="#FF0000"/>
+
+    <Button
+        android:id="@+id/skor1a"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/skor2a"
+        android:text="1 Point" 
+        android:textColor="#FF0000"/>
+    
+
+    <Button
+        android:id="@+id/skor2b"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/skor1b"
+        android:layout_alignBottom="@+id/skor1b"
+        android:layout_toRightOf="@+id/skor1a"
+        android:text="2 Point" 
+        android:textColor="#0000FF"/>
+
+    <Button
+        android:id="@+id/skor3b"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/skor2b"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="3 Point" 
+        android:textColor="#0000FF"/>
+
+    <Button
+        android:id="@+id/skor1b"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/textView1"
+        android:text="1 Point"
+        android:textColor="#0000FF" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/skor2b"
+        android:layout_toLeftOf="@+id/skor3b"
+        android:text="Point Tim B"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/pointb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_alignLeft="@+id/pointa"
+        android:text="0"
+        android:textSize="75dp" />
+
+    <Button
+        android:id="@+id/reseta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pointa"
+        android:layout_centerHorizontal="true"
+        android:text="Reset Perhitungan" 
+        android:background="#FF0000"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skor2a"
+        android:layout_centerHorizontal="true"
+        android:text="Point Tim A"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/pointa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:text="0"
+        android:textSize="75dp" />
+
+    <Button
+        android:id="@+id/resetb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pointb"
+        android:layout_alignLeft="@+id/reseta"
+        android:text="Reset Perhitungan" 
+        android:background="#0000FF"/>
+
+</RelativeLayout>
